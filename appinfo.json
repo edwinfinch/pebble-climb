@@ -1,0 +1,61 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Hi Philipp :)",
+    "longName": "CLIMB",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/climber_standing.png",
+                "name": "IMAGE_CLIMBER_STANDING",
+                "type": "png"
+            },
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/inverted_climber.png",
+                "name": "IMAGE_INVERTED_CLIMBER",
+                "type": "png"
+            },
+            {
+                "file": "images/default_climber.png",
+                "name": "IMAGE_DEFAULT_CLIMBER",
+                "type": "png"
+            },
+            {
+                "file": "images/image.png",
+                "name": "IMAGE_TIME_CONTAINTER",
+                "type": "png"
+            },
+            {
+                "file": "images/BT-Black.png",
+                "name": "IMAGE_BT_BLACK",
+                "type": "png"
+            },
+            {
+                "file": "images/bt-icon-fixed.png",
+                "name": "IMAGE_BT_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/background (1).png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "CLIMB",
+    "uuid": "66dcf5d6-e90b-438f-8a8e-7304b408387a",
+    "versionCode": 1,
+    "versionLabel": "0.8",
+    "watchapp": {
+        "watchface": true
+    }
+}
