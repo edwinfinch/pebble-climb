@@ -1,9 +1,11 @@
 #include <pebble.h>
 #include "time_container.h"
+#include "animations.h"
 	
 Container base;
 GBitmap *highlighter;
-	
+GRect r_frame;
+
 void container_set_time(struct tm *t){
 	static char buffer[] = "00:00";
 	static char d_buffer[] = "September 26th";
@@ -27,6 +29,13 @@ void container_set_time(struct tm *t){
 	fix = 132-(11*hour);
 	if(hour == 12 || hour == 0){
 		fix = 0;
+	}
+	
+	r_frame = GRect(14, fix, 144, 168);
+	if(t->tm_sec == 0 && t->tm_min == 0){
+		GRect temp = layer_get_frame(base.root);
+		animate_layer(base.root, &temp, &r_frame, 1000, 0);
+		return;
 	}
 	layer_set_frame(base.root, GRect(14, fix, 144, 168));
 }

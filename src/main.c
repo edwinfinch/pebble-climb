@@ -11,7 +11,7 @@ int battery_percent = 10;
 
 void tick_handler(struct tm *t, TimeUnits units_changed){
 	container_set_time(t);
-	climber_refresh_position(true, t);
+	climber_refresh_position(false, t);
 }
 
 void bt_handler(bool connected){
@@ -95,7 +95,7 @@ void init() {
 	});
 	battery_state_service_subscribe(battery_handler);
 	bluetooth_connection_service_subscribe(bt_handler);
-	tick_timer_service_subscribe(MINUTE_UNIT, &tick_handler);
+	tick_timer_service_subscribe(SECOND_UNIT, &tick_handler);
 	window_stack_push(window, true);
 }
 

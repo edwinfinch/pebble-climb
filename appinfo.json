@@ -3,7 +3,7 @@
     "capabilities": [
         ""
     ],
-    "companyName": "Hi Philipp :)",
+    "companyName": "Edwin Finch",
     "longName": "CLIMB",
     "projectType": "native",
     "resources": {
@@ -54,7 +54,7 @@
     "shortName": "CLIMB",
     "uuid": "66dcf5d6-e90b-438f-8a8e-7304b408387a",
     "versionCode": 1,
-    "versionLabel": "0.8",
+    "versionLabel": "1.0",
     "watchapp": {
         "watchface": true
     }
